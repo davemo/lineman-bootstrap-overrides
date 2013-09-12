@@ -11,7 +11,8 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend('application
   less: {
     compile: {
       files: {
-        "<%= files.less.generatedApp %>": "app/css/manifest.less"
+        "<%= files.less.generatedApp %>": "app/css/manifest.less",
+        "<%= files.less.generatedVendor %>": []
       }
     }
   }
